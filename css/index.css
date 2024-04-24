@@ -1,13 +1,43 @@
 /*Universal Styles*/
 * {
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Noto Serif", "Lora", "Platypi", serif;
 }
 
+h1 {
+    font-family: "Noto Serif";
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "Noto Serif";
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: "Platypi";
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p, 
+ul, 
+li {
+    font-family: "Lora";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
 section {
-    border: 3px solid hsl(0 100% 0);
+    border: 3px solid hsl(0 0 0);
     margin-bottom: 10px;
-    padding: 2px;
+    padding-left: 8px;
+    min-width: 520px;
 }
 
 .color_block {
@@ -17,11 +47,72 @@ section {
     width: 30%;
     min-width: 200px;
     border: none;
-    border-radius: 30%;
+    border-radius: 30% / 50%;
     margin: 10px;
     padding: 30px 10px;
 }
 
 #color_1 {
-    background-color: hsl(20,80%,80%);
+    background-color: hsl(20 80% 80%);
+}
+
+#color_2 {
+    background-color: hsl(284 85 48);
+}
+
+#color_3 {
+    background-color: hsl(111 82 30);
+}
+
+#color_4 {
+    background-color: hsl(4 80 50);
+}
+
+#color_5 {
+    background-color: hsl(246 100 56);
+}
+
+#color_6 {
+    background-color: hsl(18 100 52);
+}
+
+
+.font_block {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    border: 1px dashed hsl(0 0 40);
+    padding: 0px 5px;
+    margin: 10px 5px;
+}
+
+.font_block h3 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.font_style_bold {
+    font-weight: bold;
+}
+
+.font_style_italic {
+    font-style: italic;
+}
+
+#Noto_Serif_block {
+    font-family: "Noto-Serif";
+}
+
+#Lora_block {
+    font-family: "Lora";
+}
+
+#Platypi_block {
+    font-family: "Platypi";
+}
+
+div.font_block h3,
+div.font_block p {
+    font-family: inherit;
 }
